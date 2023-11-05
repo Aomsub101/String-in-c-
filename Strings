@@ -11,19 +11,19 @@ std::string str2 = "Dream";
 int len = str1.length(); //len = 6 (Aomsub)
 len = str1.size();
 std::cout << "len value : " << len << std::endl;
-
+//Output : len value : 6
 
 //empty --> return a boolean value
 if(str1.empty())//true return 1, false return 0
     std::cout << "Empty!" << std::endl;
 else
     std::cout << "There is : " << str1 << std::endl;
-
+//Output : There is : Aomsub
 
 //append --> connect the str2 behind str1
 str1.append(str2); //str1 = Aomsub --> str1 = AomsubDream
 std::cout << "str1 value : " << str1 << std::endl;
-
+//Output : str1 value : AomsubDream
 
 //Just changed the value
 str1 = "Aomsub";//append function makes it "AomsubDream". I changed it back to "Aomsub"
@@ -32,32 +32,32 @@ str1 = "Aomsub";//append function makes it "AomsubDream". I changed it back to "
 //at --> gives a character in x position
 char character = str1.at(2);//character = 'm';
 std::cout << "character value : " << character << std::endl;
-
+//Output : character value : m
 
 //substr --> gives a substring in str start at position x with y amout of character
 std::string name = str1.substr(0,3);//name = Aom
 std::cout << "name value : " << name << std::endl;
-
+//Output : name value : Aom
 
 //insert --> insert the str2 in x position of str1
 str1.insert(0, "Hello! ");//str1 = Aomsub --> str1 = Hello! Aomsub
 std::cout << "str1 value : " << str1 << std::endl;
-
+//Output : str1 value : Hello! Aomsub
 
 //find --> gives a position of str2 in str1
 int position = str1.find("Hello");//position = 0
 std::cout << "position value : " << position << std::endl;
-
+//Output : position value : 0
 
 //erase --> erase the character start at x with amount of y
 str1.erase(0,7);//str1 = Hello! Aomsub --> str1 = Aomsub
 std::cout << "str1 value : " << str1 << std::endl;
-
+//Output : str1 value : Aomsub
 
 //clear --> clear all the string character
 str1.clear(); //str1 = Aomsub --> str1 = "" (null)
 std::cout << "str1 value : " << str1 << std::endl;
-
+//Output : str1 value :
 
 //compare
 str1 = "abc";
@@ -66,25 +66,37 @@ if(!str1.compare(str2))//true retuen 0,false return 1
     std::cout << "It's the same string" << std::endl;
 else
     std::cout << "It's not the same string" << std::endl;
-
+//Output : It's not the same string
 
 //stoi --> convert string to integer
 std::string s = "543";
 int x = std::stoi(s) + 21;
 std::cout << "X = " << x << std::endl;
-
+//Output : X = 564
 
 //to_string --> convert integer to string
 int y = 234;
 s = std::to_string(y) + "5";
 std::cout << "s = " << s << std::endl;
+//Output : s = 2345
 
-
-//sort
+//sort (need to add algorithm library)
 s = "ascjnbsjvdnbasijklasjfksmfdv";
 sort(s.begin(), s.end());
 std::cout << "After sort : " << s << std::endl;
-
+//Output : After sort : aaabbcddffijjjjkklmnnsssssvv
 
 return 0;
 }
+
+
+
+
+
+
+
+
+ 
+
+
+
