@@ -1,0 +1,22 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main(){
+    char ch;
+
+    //toupper func
+    //prototype --> int toupper(int ch)
+    //toupper func convert argument to integer and return in integer (ASCII)
+
+    ch = toupper('a'); //send 'a' then convert to 97 (a is 97 in ASCII)
+                       //then return 65 (95-32) in integer
+                       //(-32 comes from different of 'a'(97 in ASCII) and 'A'(65 in ASCII) which is 32)
+    //since we want it to be a character so we declare a character variable
+    //in this case 'ch', to take an ASCII value an turn it to character. 
+    
+    //so that is how 'a' turns to 'A'
+    cout << ch; //output : A
+
+    //same concepts occupied with tolower() func just upside down.
+
+}
